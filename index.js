@@ -3,7 +3,7 @@ function $$(expr, con) { return [].slice.call((con || document).querySelectorAll
 
 var css = [];
 
-$$('a[data-property]').forEach(function(el, i){
+`$$('a[data-property]').forEach(function(el, i){
 	var property = el.getAttribute('data-property'),
 		from = el.getAttribute('data-from'),
 		to = el.getAttribute('data-to');
